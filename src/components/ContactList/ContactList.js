@@ -12,16 +12,15 @@ export function ContactList() {
  
   return (
     <ul className={s.list}>
-      {(contacts.map(({ id, name, number }) => {
-        return (
-        <ContactListItem
-          key={id}
-          id={id}
-          name={name}
-          number={number}
-        />
-      )
-      }))}
+      {contacts.map(({ id, name, number }) => (
+          <ContactListItem
+            key={id}
+            id={id}
+            name={name}
+            number={number}
+          />
+        )
+      )}
     </ul>
   );
 }
