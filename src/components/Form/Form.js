@@ -92,7 +92,6 @@ export default function Form() {
 
 Form.PropType = {
   onSubmit: PropsType.func.isRequired,
-  onChange: PropsType.func.isRequired,
 };
 
 // const mapDispatchToProps = dispatch => ({
